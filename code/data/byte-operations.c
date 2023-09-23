@@ -26,9 +26,8 @@ void test_inplace_swap() {
 
 void reverse_array(int a[], int cnt) {
     int first, last;
-    for (first = 0, last = cnt - 1; first <= last; first++, last--) {
+    for (first = 0, last = cnt - 1; first < last; first++, last--) {
         printf("Before: first - %d, last - %d\n", first, last);
-        if(first == last) continue;
         inplace_swap(&a[first], &a[last]);
         printf("After: first - %d, last - %d\n", first, last);
     }
