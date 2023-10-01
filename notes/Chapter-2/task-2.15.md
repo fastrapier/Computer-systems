@@ -1,0 +1,1 @@
+!(x ^ y) equal to x == y
